@@ -1,29 +1,33 @@
-# my-first-project
-# a calculator built through python 
+# simple_calculator.py
 
 def add(x, y):
-return x + y
+    """Return the sum of x and y."""
+    return x + y
 
 def subtract(x, y):
-return x - y
+    """Return the difference between x and y."""
+    return x - y
 
 def multiply(x, y):
-return x * y
+    """Return the product of x and y."""
+    return x * y
 
 def divide(x, y):
-if y != 0:
+    """Return the quotient of x and y. Handle division by zero."""
+    if y != 0:
         return x / y
     else:
         return "Error: Division by zero is not allowed."
 
 def calculator():
+    """Simple calculator function to perform basic arithmetic operations."""
     print("Select operation:")
     print("1. Add")
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
 
-    while True:
+    while true:
         choice = input("Enter choice (1/2/3/4): ")
 
         if choice in ('1', '2', '3', '4'):
@@ -48,6 +52,5 @@ def calculator():
 
         next_calculation = input("Do you want to perform another calculation? (yes/no): ").lower()
         if next_calculation != 'yes':
-            break
-if __name__ == "__main__":
-    calculator()
+            break 
+        if __name__ == "__main__":calculator()
