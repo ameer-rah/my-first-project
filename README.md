@@ -1,25 +1,25 @@
 # simple_calculator.py
 
-def add(x, y):
+    def add(x, y):
     """Return the sum of x and y."""
     return x + y
 
-def subtract(x, y):
+    def subtract(x, y):
     """Return the difference between x and y."""
     return x - y
 
-def multiply(x, y):
+    def multiply(x, y):
     """Return the product of x and y."""
     return x * y
 
-def divide(x, y):
+    def divide(x, y):
     """Return the quotient of x and y. Handle division by zero."""
-    if y != 0:
+    if y != 0: 
         return x / y
-    else:
+    else:    
         return "Error: Division by zero is not allowed."
 
-def calculator():
+    def calculator():
     """Simple calculator function to perform basic arithmetic operations."""
     print("Select operation:")
     print("1. Add")
